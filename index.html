@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#d81b72">
+<meta name="description" content="초·중·고 학부모를 위한 오늘의 교육뉴스">
+<title>홍쌤영어 EDUCATION DAILY</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./" aria-label="홍쌤영어 EDUCATION DAILY 홈">
+      <span class="brand-main">홍쌤영어</span><span class="brand-sub">EDUCATION DAILY</span>
+    </a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <button class="nav-item active" data-category="전체">오늘</button>
+      <button class="nav-item priority-nav" data-category="입시">입시</button>
+      <button class="nav-item priority-nav" data-category="수능">수능</button>
+      <button class="nav-item priority-nav" data-category="영어교육">영어</button>
+      <button class="nav-item" data-category="초등">초등</button>
+      <button class="nav-item" data-category="중등">중등</button>
+      <button class="nav-item" data-category="고등">고등</button>
+      <button class="nav-item" data-category="교육정책">정책</button>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button class="nav-item active" data-category="전체">오늘</button>
+    <button class="nav-item priority-nav" data-category="입시">입시</button>
+    <button class="nav-item priority-nav" data-category="수능">수능</button>
+    <button class="nav-item priority-nav" data-category="영어교육">영어</button>
+    <button class="nav-item" data-category="초등">초등</button>
+    <button class="nav-item" data-category="중등">중등</button>
+    <button class="nav-item" data-category="고등">고등</button>
+    <button class="nav-item" data-category="교육정책">정책</button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">TODAY'S EDUCATION NEWS</div>
+    <div class="hero-copy">
+      <div>
+        <h1>오늘의 교육뉴스,<br><strong>우리 아이에게 필요한 것만.</strong></h1>
+        <p>초·중·고 교육정책부터 영어교육, 입시 소식까지 학부모가 알아야 할 뉴스를 한눈에 확인하세요.</p>
+      </div>
+      <div class="date-card"><span class="date-label">TODAY</span><strong id="today"></strong><strong id="weekday"></strong><span id="updated"></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap audience">
+  <div class="section-head compact"><div><span class="eyebrow">MY CHILD</span><h2>우리 아이 학년</h2></div><button class="reset" id="resetFilter">전체 보기</button></div>
+  <div class="grade-scroller" role="group" aria-label="학년 선택">
+    <button class="grade" data-grade="초등">초등</button><button class="grade" data-grade="중1">중1</button><button class="grade" data-grade="중2">중2</button><button class="grade" data-grade="중3">중3</button><button class="grade" data-grade="고1">고1</button><button class="grade" data-grade="고2">고2</button><button class="grade" data-grade="고3">고3</button>
+  </div>
+</section>
+
+<section class="wrap section" id="topNewsSection">
+  <div class="section-head"><div><span class="eyebrow">TOP NEWS</span><h2>오늘 꼭 알아야 할 뉴스</h2></div><span class="section-note">가장 최근 소식</span></div>
+  <div id="topGrid" class="top-grid"></div>
+</section>
+
+<section class="wrap section" id="news">
+  <div class="section-head"><div><span class="eyebrow">LATEST</span><h2 id="listTitle">최신 교육뉴스</h2></div><span id="count" class="count"></span></div>
+  <div id="newsList" class="news-list"></div>
+  <div id="empty" class="empty" hidden>선택한 조건에 맞는 뉴스가 없습니다.</div>
+</section>
+</main>
+
+<footer><div class="wrap footer-inner"><div><strong>홍쌤영어 EDUCATION DAILY</strong><br><span>초·중·고 학부모를 위한 교육정보</span></div><span>기사 전문을 복제하지 않고 제목·출처·원문 링크 중심으로 제공합니다.</span></div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

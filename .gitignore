@@ -1,0 +1,25 @@
+﻿# Local backups and archives
+data/news_backup.json
+data/news_before_daily_test.json
+data/archive/
+
+# Local logs
+logs/
+
+# Local automation and backup scripts
+scripts/daily_update.py
+scripts/daily_update_before_archive.py
+scripts/fetch_news_backup.py
+daily_update.bat
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Local README backup
+README_local_backup.md
